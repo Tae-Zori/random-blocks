@@ -1,0 +1,25 @@
+@mixin buttonHover() {
+    box-shadow: 3px 3px 10px #1e1f26bc, -1px -1px 6px rgba(255, 255, 255, 0.559);
+}
+
+@mixin buttonActive() {
+    border: none;
+    box-shadow: inset 3px 3px 10px #1e1f26bc,
+        inset -1px -1px 6px rgba(255, 255, 255, 0.559);
+}
+
+@mixin textStyle(
+    $size: 18px,
+    $weight: 400,
+    $fontStyle: normal,
+    $font: $baseFont
+) {
+    font-family: $font;
+    font-style: $fontStyle;
+    font-weight: $weight;
+    font-size: $size;
+}
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
